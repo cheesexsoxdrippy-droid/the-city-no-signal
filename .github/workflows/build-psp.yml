@@ -1,0 +1,23 @@
+
+name: Build THE CITY NO SIGNAL PSP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pspdev/pspdev:latest
+    steps:
+      - name: Download source code
+        uses: actions/checkout@v4
+
+      - name: Compile PSP game
+        run: make
+
+      - name: Upload PSP game
+        uses: actions/upload-artifact@v4
+        with:
+          name: THE-CITY-NO-SIGNAL-EBOOT
+          path: EBOOT.PBP
+          if-no-files-found: error
