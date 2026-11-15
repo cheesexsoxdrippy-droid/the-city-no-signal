@@ -1,0 +1,8 @@
+THE CITY: NO SIGNAL — ENHANCED CONTROLS
+
+D-pad             Move
+Left analog stick Turn
+X                 Inspect evidence
+Square            Toggle flashlight (UNLIMITED BATTERY)
+Triangle          Radio
+Start             Pause
