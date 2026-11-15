@@ -11,5 +11,5 @@ EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = THE CITY: NO SIGNAL
 BUILD_PRX = 1
 PSP_FW_VERSION = 500
-
+PSPSDK := $(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak
