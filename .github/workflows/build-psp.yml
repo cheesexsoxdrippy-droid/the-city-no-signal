@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Download source code
         uses: actions/checkout@v4
+      - name: Configure PSP SDK
+        run: echo "PSPSDK=$PSPDEV/psp/sdk" >> "$GITHUB_ENV"
 
       - name: Compile PSP game
         run: make
